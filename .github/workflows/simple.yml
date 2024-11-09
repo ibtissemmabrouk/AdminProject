@@ -5,7 +5,7 @@ name: Shell Commands
 on:
   push:
     branches:
-      -dev
+      - dev
 
 jobs:
     run-shell-command:
@@ -14,9 +14,9 @@ jobs:
       #Runner OS
       steps:
       #Array of steps (object): name, run bash command-name: echo a string
-        -name: echo a string
-         run: echo "Starting"
-        -name: multiline script
-         run: |
-           node -v
-           npm-v
+        - name: echo a string
+          run: echo "Starting"
+        - name: multiline script
+          run: |
+            node -v
+            npm -v
