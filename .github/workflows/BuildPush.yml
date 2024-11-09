@@ -16,6 +16,6 @@ jobs:
            username: ${{ secrets.DOCKER_USERNAME }}
            password: ${{ secrets.DOCKER_TOKEN }}
        - name: Build image
-         run: docker image build  -t ing2isimm2024/simplewebdev-f Dockerfile.dev .
+         run: docker image build  -t ing2/simplewebdev-f Dockerfile.dev .
        - name: Push image
-         run: docker image push ing2isimm2024/simplewebdev
+         run: docker image push ing2/simplewebdev
